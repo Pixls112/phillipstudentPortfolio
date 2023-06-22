@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-
 header {
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +42,16 @@ header nav ul {
     margin-bottom: 25px;
     background-image: url("../images/Portfilio\ Laptop\ Banner2.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center;    
+}
+
+.hero p {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    padding-top: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 section {
@@ -115,11 +123,15 @@ section {
 }
 
 .card-2{
-    background-image: url('../images/Horiseon\ Website\ Refactor.jpg' );
+    background-image: url('../images/Sign-Plate-Work-in-Progress.jpg' );
 }
 
 .card-3{
-    background-image: url('../images/Horiseon\ Website\ Refactor.jpg' );
+    background-image: url('../images/Sign-Plate-Work-in-Progress.jpg' );
+}
+
+.card-4{
+    background-image: url('../images/Sign-Plate-Work-in-Progress.jpg' );
 }
 
 .card1 p{
@@ -198,8 +210,15 @@ footer p{
 }
 
 @media screen and (max-width:800px) {
-    header, nav {
+    header {
         flex-direction: column;
+    }
+
+    .AboutMe p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
     }
     
 }
