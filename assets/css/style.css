@@ -23,16 +23,25 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
 header nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+header nav ul li a {
+    display: inline-block;
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: rgb(26, 216, 223);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
 }
 
 .hero {
@@ -43,6 +52,11 @@ header nav ul {
     background-image: url("../images/Portfilio\ Laptop\ Banner2.jpg");
     background-size: cover;
     background-position: center;    
+}
+
+figure img:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
 }
 
 .hero p {
