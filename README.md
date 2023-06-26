@@ -16,13 +16,19 @@ With these points in mind, in this Challenge I will set myself up for future suc
 ## Credits
 
 I was able to accomplish my goal with the help of this video and website as a reference when working on my project. 
-https://www.youtube.com/watch?v=qXRYMdvq_Dc
+https://www.youtube.com/watch?v=qXRYMdvq_Dc 
+##
 https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 ## Access Site
 
 This is the link to access the site launched by github
 
+## Github
+https://github.com/Pixls112/phillipstudentPortfolio
+
+## Launched Website
+https://pixls112.github.io/phillipstudentPortfolio/
 
 ## License
 
