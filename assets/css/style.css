@@ -1,9 +1,10 @@
+/*This sets the general style for the page*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* This affects the header and gives it a small hover effect when cursor is hovered over it*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +44,7 @@ header nav ul li a:hover {
     transform: scale(1.03);
     transition: all 1s ease;
 }
-
+/* This sets the style and margins for the display image that is used to help customize my page*/
 .hero {
     display: flex;
     height: 600px;
@@ -53,12 +54,18 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;    
 }
+/* This sets the style of the text to ensure there are no underline and that it stays black*/
+.defaultText {
+    text-decoration: none;
+    color: black;
+}
 
+/* Identical function as earlier which gives the element when hovered overed a pop effect*/
 figure img:hover{
     transform: scale(1.03);
     transition: all 1s ease;
 }
-
+/*  This affects the text nested in section using class hero*/
 .hero p {
     font-size: 60px;
     color: rgb(255, 255, 255);
@@ -105,6 +112,9 @@ section {
     width: 100%;
 }
 
+/* With inspiration from https://www.youtube.com/watch?v=qXRYMdvq_Dc, I was able to create and modify my own version of his code. These lines allowed me to create interactable boxes 
+with different sizes to differeniate my main projects and side projects. This also allows the boxes to stack and move themselves to ensure they fit on the page when zooming in and taking 
+up the proper amount of space when zooming out*/
 .container {
     display: flex;
     justify-content: center;
@@ -131,7 +141,7 @@ section {
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
-
+/* In conjuction with the code above, this sets the image for each box when called for in the html, and also sets the style and spacing of the text on the cards*/
 .card-1{
     background-image: url('../images/Horiseon\ Website\ Refactor.jpg' );
 }
@@ -181,7 +191,7 @@ section {
     transform: scale(1.03);
     transition: all 1s ease;
 }
-
+/* this allows the nav buttons to stack when zooming in and adding a hover affect over them when the cursor is over them */
 nav {
     justify-content: center;
     display: flex;
@@ -206,7 +216,7 @@ button {
     transform: scale(1.03);
     transition: all 1s ease;
   }
-
+/*This sets the style and font for the footer of the page*/
 footer {
     padding: 30px;
     clear: both;
@@ -222,8 +232,39 @@ footer h2 {
 footer p{
     color:white
 }
-
+ /*Although unfinished this allows the page to resize certain elements when viewing the page from different devices with varying resolutions*/
 @media screen and (max-width:800px) {
+    header {
+        flex-direction: column;
+    }
+
+    figure img{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .AboutMe p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 50%;
+        padding: 15px;
+    }
+    
+    .section-title h2 {
+        font-size: 20px;
+        line-height: .01;
+        width: 50%;
+    }
+    
+    .section-title {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
     header {
         flex-direction: column;
     }
@@ -235,4 +276,15 @@ footer p{
         padding: 15px;
     }
     
+    .section-title h2 {
+        font-size: 20px;
+        line-height: .01;
+        width: 100%;
+    }
+    
+    .section-title {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
